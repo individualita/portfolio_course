@@ -14,7 +14,7 @@
         background-color: #000;
     }
     &__text {
-        writing-mode: vertical-lr;  
+        writing-mode: vertical-lr;  //чтобы перевернуть текст
         transform: rotate(180deg);
     }
 }
