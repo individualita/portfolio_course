@@ -37,8 +37,20 @@
         &__ratings {
             grid-template-columns: repeat(auto-fit, 350px);
             grid-auto-rows: minmax(70px, auto);
-            justify-content: space-between;
+            justify-content: center;
             padding: 0 30px;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 35px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
         }
     }
 }
@@ -144,6 +156,9 @@
                 justify-content: center;
             }
         }
+    }
+    .portfolio {
+        padding-top: 40px;
     }
 }
 
