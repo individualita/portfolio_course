@@ -31,13 +31,14 @@
     }
     .skills {
         &__items {
-            grid-template: repeat(2,minmax(270px,auto))/repeat(3,270px);
-            justify-content: center;
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: space-between;
         }
         &__ratings {
-            grid-template: repeat(2,minmax(70px,auto))/repeat(2,350px);
-            justify-content: center;
-            column-gap: 130px;
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: space-between;
+            padding: 0 30px;
         }
     }
 }
@@ -75,15 +76,13 @@
     }
     .skills {
         &__items {
-            grid-template: repeat(2,minmax(270px,auto))/repeat(2,270px);
-            justify-content: center;
-            column-gap: 40px;
+            padding: 0 20px;
         }
         &__ratings {
-            margin-top: 100px;
-            grid-template: repeat(3,minmax(70px,auto))/repeat(2,300px);
-            justify-content: center;
-            column-gap: 40px;
+            grid-template-columns: repeat(auto-fit, 320px);
+            justify-content: space-between;
+            padding: 0;
+            column-gap: 0;
         }
     }
 }
@@ -128,16 +127,17 @@
         }
     }
     .skills {
+        padding-top: 40px;
         &__items {
-            grid-template: repeat(7,minmax(270px,auto)) / 1fr;
+            padding: 0;
             justify-content: center;
-            column-gap: 40px;
+            gap: 20px;
         }
         &__ratings {
-            margin-top: 100px;
-            grid-template: repeat(6,minmax(70px,auto))/ 1fr;
+            grid-template-columns: repeat(auto-fit, 320px);
+            grid-auto-rows: minmax(70px, auto);
             justify-content: center;
-            column-gap: 40px;
+            margin-top: 40px;
         }
         &__item {
             &-img {
@@ -187,7 +187,10 @@
     }
     .skills {
         &__items {
-            margin-top: 18px;;
+            margin-top: 18px;
+        }
+        &__ratings {
+            grid-template-columns: repeat(auto-fit, 1fr);
         }
     }
     .title {
